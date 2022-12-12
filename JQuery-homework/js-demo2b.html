@@ -10,12 +10,13 @@
 <script>
     $(document).ready(function() {
        $("#btn").click(function(event){
-
+            $('#btn').load('/jq/text.txt');
        });
     });
  </script>
 </head> 	
 <body>
+
 
 <div id="container">
 
@@ -71,7 +72,18 @@
     </tfoot>-->
     </table>
 
+        <!--<div id = "showinfo"></div>-->
+    <p>Click button to load data</p>
+    <!--Code injected by live server-->
     <input type = "button" id = "btn" value = "Load Data" style="margin-top:20px;" />
+    <script type="text/javascript"></script>
+    <div id="showinfo">
+      <p>NAME: Zara Ali</p>
+      <p>AGE: 67</p>
+      <p>SEX: female</p>
+    </div>
+
+    
 </main>
 
 <footer>&copy; Copyright 2020</footer>
